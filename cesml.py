@@ -14,8 +14,7 @@ def loginCESML(s,username,password,client_id):
   url = "https://moncompte-cesml-grd-eld.multield.net/application/auth/authorize-implicit-internet/authentification"
   payload = 'username='+username+'&password='+password+'&client_id='+client_id
   headers = {
-    'Content-Type': 'application/x-www-form-urlencoded',
-    'Cookie': 'cookieOauth=9a90146e7c0672fd76993db0b06658cd8c1e0e9e835006d4063c1702e3952150'
+    'Content-Type': 'application/x-www-form-urlencoded'
   }
   response = s.post(url, headers=headers, data=payload,proxies={"https":"http://127.0.0.1:9000"},verify=False)
   url = "https://moncompte-cesml-grd-eld.multield.net/application/auth/authorize-implicit-internet?redirect_uri=https%3A%2F%2Fmoncompte-cesml-grd-eld.multield.net%2Fautorisation-callback.html&response_type=token&client_id=aelGRD"
