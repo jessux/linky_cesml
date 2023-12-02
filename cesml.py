@@ -2,6 +2,9 @@ import requests
 import re
 import json
 import datetime
+import urllib3
+urllib3.disable_warnings()
+
 
 def get_accesstoken(resp, *args, **kwargs):
   global token
