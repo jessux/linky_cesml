@@ -6,6 +6,7 @@ Récupération des informations de consomation linky pour le fournisseur CESML
 #### Pour plus de facilité, j'utilise la librairie Pandas
 
 ```python
+from cesml import Linky
 import pandas as pd
 linky = Linky(<username>,<password>,"aelGRD",{"https":"http://127.0.0.1:9000"})
 json_data = linky.getMesures()
