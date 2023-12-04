@@ -8,7 +8,7 @@ Récupération des informations de consomation linky pour le fournisseur CESML
 ```python
 from cesml import Linky
 import pandas as pd
-linky = Linky(<username>,<password>,"aelGRD",{"https":"http://127.0.0.1:9000"})
+linky = Linky(<username>,<password>,"aelGRD",< PROXY : {"https":"http://127.0.0.1:9000"}>)
 json_data = linky.getMesures()
 data = pd.DataFrame(json_data["periodesActivite"][0]["courbe"]['valeurs'])
 
